@@ -1,0 +1,11 @@
+//accepts if there are more a's than b's
+#, 0, 3
+0, 1, #, #, $
+1, 1, a, #, b
+1, 2, #, #, #
+2, 2, b, b, #
+2, 3, #, b, #
+3, 3, #, b, #
+//adding a sink edge
+//and testing comments in middle of file
+3, 3, #, $, #

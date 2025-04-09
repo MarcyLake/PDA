@@ -1,0 +1,30 @@
+//determines if a regular expression is valid or not
+//uses U for union, A for intersection, and ~ for negation
+//# is an empty string and e represents epsilon transition
+e, start, accept
+start, 1, e, e, $
+1, 1, (, e, )
+1, 1, ~, e, e
+1, 2, #, e, e
+1, 2, 0, e, e
+1, 2, 1, e, e
+2, 2, #, e, e
+2, 2, 0, e, e
+2, 2, 1, e, e
+2, 2, *, e, e
+2, 2, (, e, )
+2, 2, ), ), e
+2, 3, ~, e, e
+3, 3, #, e, e
+3, 3, (, e, )
+3, 3, ), ), e
+3, 2, 0, e, e
+3, 2, 1, e, e
+2, 4, U, e, e
+2, 4, A, e, e
+4, 4, #, e, e
+4, 4, (, e, )
+4, 2, 0, e, e
+4, 2, 1, e, e
+4, 3, ~, e, e
+2, accept, e, $, e

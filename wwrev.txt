@@ -1,0 +1,11 @@
+//accepts w followed by the reverse of w for a b and c
+#, 0, 3
+0, 1, #, #, $
+1, 1, a, #, a
+1, 1, b, #, b
+1, 1, c, #, c
+1, 2, #, #, #
+2, 2, a, a, #
+2, 2, b, b, #
+2, 2, c, c, #
+2, 3, #, $, #
